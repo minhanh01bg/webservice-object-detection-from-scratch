@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="../js/main.css">
+    <script src="../scss/home.js"></script>
+
+  </head>
+  <body>
+    <div class="container-fuild">
+      <!-- navbar -->
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <div class="container-fluid">
+            <div class="navbar-brand">
+                <img id="logo"
+                  src="../assets/img/icons/icons8-fancy-voxel-48.png"
+                  alt=""
+                  style="width: 35px"
+                />
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Dropdown
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                </li>
+              </ul>
+              <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+              </form>
+            </div>
+          </div>
+      </nav>
+      <!-- end navbar -->
+
+      <!-- main content -->
+      <div class="container">
+        <div class="row mt-3">
+          <div class="col-md-4 mt-2 display-none">
+            <div class="ratio ratio-16x9">
+              <video crossOrigin="anonymous" class="object-fit-contain" src="http://localhost:3000/public/video1.mp4" id="video-upload-display" autoplay controls></video>
+            </div>
+          </div>
+
+          <div class="col-md-8 mt-2">
+            <div class="ratio ratio-16x9">
+              <canvas ></canvas>
+            </div>
+          </div>
+          
+          <div class="col-md-4 card mt-2">
+            
+            <div class="card-body">
+              <h5 class="card-title
+              ">Upload video</h5>
+              <form class="" id="upload-video">
+                <div class="mb-3">
+                  <label for="formFile" class="form-label">Choose file</label>
+                  <input class="form-control" type="file" id="formFile">
+                </div>
+                <div class="">
+                  <button type="submit" class="btn btn-primary mb-3">Confirm identity</button>
+                  <div>
+                    <button class="btn btn-primary mb-3" id="btn-play">Start camera</button>
+                    <button class="btn btn-primary mb-3" id="btn-stop">Stop camera</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <script src="../js/main.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/onnxruntime-web/dist/ort.min.js"></script> -->
+    <script src="../js/home.js"></script>
+  </body>
+</html>

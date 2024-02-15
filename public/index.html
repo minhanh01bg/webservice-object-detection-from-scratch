@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./scss/styles.css">
+  </head>
+  <body>
+    <div class="container-xxl d-flex justify-content-center">
+      <!-- Register -->
+      <div class="card w-70 mt-4 border-1">
+        <div class="card-body">
+          <!-- Logo -->
+          <div class="justify-content-center">
+            <a
+              href="index.html"
+              class="gap-2 d-flex justify-content-center align-item-center"
+            >
+              <div>
+                <span>
+                  <img id="logo"
+                    src="./src/assets/img/icons/icons8-fancy-voxel-48.png"
+                    alt=""
+                    style="width: 35px"
+                  />
+                </span>
+              </div>
+              <div>
+                <span class="text-body fw-bold h3">FANCY</span>
+              </div>
+            </a>
+          </div>
+
+          <p class="mt-4 mb-4">
+            Vui lòng đăng nhập tài khoản của bạn và bắt đầu khám phá
+          </p>
+
+          <form id="formAuthentication" class="mb-3" action="/">
+            <div class="mb-3">
+              <label for="username" class="form-label">Tài khoản</label>
+              <input
+                type="text"
+                class="form-control"
+                id="username"
+                name="username"
+                placeholder="Enter your username"
+                autofocus
+              />
+            </div>
+            <div class="mb-3 form-password-toggle">
+              <div class="d-flex justify-content-between">
+                <label class="form-label" for="password">Mật khẩu</label>
+                <a href="">
+                  <small>Quên mật khẩu?</small>
+                </a>
+              </div>
+              <div class="input-group input-group-merge">
+                <input
+                  type="password"
+                  id="password"
+                  class="form-control"
+                  name="password"
+                  placeholder="&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;"
+                  aria-describedby="password"
+                />
+                <span class="input-group-text cursor-pointer"
+                  ><i class="bx bx-hide"></i
+                ></span>
+              </div>
+            </div>
+            <div class="mb-3">
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  id="remember-me"
+                />
+                <label class="form-check-label" for="remember-me">
+                  Lưu tài khoản
+                </label>
+              </div>
+            </div>
+            <div class="mb-3">
+              <button class="btn btn-primary d-grid w-100" type="submit">
+                Đăng nhập
+              </button>
+            </div>
+          </form>
+
+          <p class="text-center">
+            <a href="">
+              <span>Tạo tài khoản mới</span>
+            </a>
+          </p>
+        </div>
+      </div>
+      <!-- /Register -->
+    </div>
+
+    <script src="./js/main.js"></script>
+    <script src="./js/index.js"></script>
+  </body>
+</html>
